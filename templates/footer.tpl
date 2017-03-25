@@ -31,8 +31,8 @@
       <div class="one-third column">
         <h5 class="subtitle"></h5>
         <div class="tagcloud">
-        	<a href="">Innovación</a><a href="">Tecnologia</a><a href="">Desarrollo</a>
-        	<a href="">Diseño</a><a href="">Consultoria</a><a href="">Sistemas</a>
+        	<!--<a href="">Innovación</a><a href="">Tecnologia</a><a href="">Desarrollo</a>
+        	<a href="">Diseño</a><a href="">Consultoria</a><a href="">Sistemas</a>-->
         	<!--<a href="">Web Design</a><a href="">Video</a><a href="">ART</a><a href="">New Work</a>
         	<a href="">Animation</a><a href="">Photoshop</a><a href="">Digital Painting</a>
         	<a href="">CG</a><a href="">Howto</a>-->
@@ -40,8 +40,10 @@
 		<br class="clear">
         <div class="partner-website">
 	        <h5 class="subtitle">Te Recomendamos </h5>
-	        <a href="https://www.tesla.com/es_MX/"><i class="fa-arrow-right-17">Tesla Motors</i></a>
-	        <a href="https://www.spacex.com"><i class="fa-arrow-right-17"></i>Space X</a><!--
+	        <!--<a href="https://www.tesla.com/es_MX/"><i class="fa-arrow-right-17">Tesla Motors</i></a>
+	        <a href="https://www.spacex.com"><i class="fa-arrow-right-17"></i>Space X</a>
+			-->
+			<!--
 	        <a href=""><i class="fa-arrow-right-17"></i>MNKY Web Design Agency</a>
 	        <a href=""><i class="fa-arrow-right-17"></i>Green Business Association</a>
 	        <a href=""><i class="fa-arrow-right-17"></i>Bright Idia Photography</a>-->

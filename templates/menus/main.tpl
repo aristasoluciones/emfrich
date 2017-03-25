@@ -17,11 +17,10 @@
           </li>
           <li><a href="#">PRODUCTOS</a>
             <ul>
-			  <li><a href="{$WEB_ROOT}/producto/cat/1">PUERCO</a></li>			         
-              <li><a href="{$WEB_ROOT}/producto/cat/2">RES</a></li>
-			   <li><a href="{$WEB_ROOT}/producto/cat/3">POLLO</a></li>
-			   <li><a href="{$WEB_ROOT}/producto/cat/4">EMBUTIDOS FRIOS</a></li>
-			   <li><a href="{$WEB_ROOT}/producto/cat/5">Otro carne</a></li>
+			  <li><a href="{$WEB_ROOT}/producto/cat/1">Carne de Cerdo</a></li>			         
+              <li><a href="{$WEB_ROOT}/producto/cat/2">Carne de Res</a></li>
+			   <li><a href="{$WEB_ROOT}/producto/cat/3">Carne de Pollo</a></li>
+
             </ul>
           </li>
           <li><a  href="#">SUCURSALES</a>
@@ -36,15 +35,15 @@
 			  <li><a href="{$WEB_ROOT}/sucursal/cat/8"> CARINICERIA JUAN CARLOS</a></li>
             </ul>
           </li>
-		  
+		  <!--
           <li><a href="#">EMFRICH</a>
             <ul>
               <li><a href="{$WEB_ROOT}/puestos/cat/1">EQUIPO DE TRABAJO</a></li>
             </ul>
-          </li>
-		<li><a href="{$WEB_ROOT}/PEDIDO">PEDIDO</a>
+          </li>-->
+		<!--<li><a href="{$WEB_ROOT}/PEDIDO">PEDIDO</a>
 
-          </li>
+          </li>-->
 		  <li><a href="{$WEB_ROOT}/contacto">CONTACTO</a>		  
           </li>
         </ul>

@@ -15,7 +15,9 @@
 			<header id="header">
 				<div  class="container">
 					<div class="four columns">
-					<div class="logo"><a href="index.html"><img src="{$WEB_ROOT}/images/logo-1.PNG" width="100" id="img-logo" alt="logo"></a></div>
+					<div class="logo">
+					<a href="#"><img src="{$WEB_ROOT}/images/logo-1.png" width="100" id="img-logo" alt="logo"></a>
+					</div>
 					</div>		
 				{include file="{$DOC_ROOT}/templates/menus/main.tpl"}
 				</div>
@@ -31,9 +33,13 @@
 		
 			<!-- end-header -->
   <section id="headline" style="background: url({$WEB_ROOT}/images/original.jpg) no-repeat center center;">
-    <div class="container" style="background: black; width:780px">
-      <h3><font color="white">{$Infosucursal.nombre}</font></h3>
-    </div>
+    
+      <h3>
+	  <div class="container" style="background:rgba(54, 55, 58, 0.41); width:880px">
+	  <font color="white">{$Infosucursal.nombre}</font>
+	  </div>
+	  </h3>
+  
   </section>
   
   
@@ -96,7 +102,7 @@
     <!-- end-sidebar-->
     <br class="clear">
   </section>
-  {include file="{$DOC_ROOT}/templates/seccion3.tpl"}
+  {**include file="{$DOC_ROOT}/templates/seccion3.tpl"**}
 {include file="{$DOC_ROOT}/templates/footer.tpl"}
 			
 	</div>
