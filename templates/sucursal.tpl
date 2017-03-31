@@ -7,9 +7,10 @@
 	{include file="{$DOC_ROOT}/templates/1-default-meta.tpl"}
 	{include file="{$DOC_ROOT}/templates/2-default-css.tpl"}-->
 	{include file="{$DOC_ROOT}/templates/header.tpl"}
+	
 </head>
 
-<body class="" >
+<body class="" onload="initialize()">  
 	<div id="wrap" class="colorskin-0">
 		<div id="sticker">
 			<header id="header">
@@ -54,20 +55,23 @@
     <section class="eleven columns">
 	
 		<h3>{$Infosucursal.nombre}</h3>
-		<br>
-		<br>
 		<p> {$Infosucursal.productos}
 		</p>
-		<h3></h3>
+
 		<br>
 		
-
+		<h3>ENCARGADO</h3>
 		<p>{$Infosucursal.encargado}</p>
 		<BR>
 		
 		<h3>DIRECCIÓN</h3>
 		<p>{$Infosucursal.direccion}</p>
-	</figure>
+		<BR>
+		
+		<h3>UBICACIÓN</h3>
+		<p></p>
+		
+		
       <!-- end-product-item-->
 	  <div class="one_half column-last">
 		  <h1></h1>
@@ -75,15 +79,21 @@
 		
 		  <hr class="vertical-space">
 		  <div class="quantity buttons_added">
+
 		 <!-- <input class="minus" type="button" value="-"></input>
 		  <input type="text" step="1" min="1" name="quantity" value="1" title="Qty" class="input-text qty text">
 		  <input class="plus" type="button" value="+"></input>-->
 		  <!--<a href="#" class="addtocart">Add to Cart</a>-->
 		  </div>
 	  </div> 
-	  	  
-	<hr class="vertical-space1">
-
+	  <!--
+	  <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1ses!2smx!4v1490976863511!6m8!1m7!1s171dPTXZO5RZLCsq_NC3tw!2m2!1d16.74721130670059!2d-93.1187725558971!3f302.05146306259115!4f-13.397526309743995!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.420986860444!2d-93.14026668549575!3d16.75571798846011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQ1JzIwLjYiTiA5M8KwMDgnMTcuMSJX!5e0!3m2!1ses!2smx!4v1490977001422" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	  -->
+	  <div id="contact-map">
+			 <div id="map_canvas" style="width:1500px; height:500px"></div>
+	  </div>
+	  
 	  
 	  <hr class="vertical-space2">
 	  
@@ -108,9 +118,9 @@
 	</div>
 	{include file="{$DOC_ROOT}/templates/3-default-js.tpl"}
 	<script type="text/javascript">
-		jQuery(document).ready(function() {    
-		   App.init(); // initlayout and core plugins		   
-		});
+		<!-- jQuery(document).ready(function() {     -->
+		   <!-- App.init(); // initlayout and core plugins		    -->
+		<!-- }); -->
 	</script>
     
 </body>

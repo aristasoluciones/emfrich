@@ -13,6 +13,12 @@
 	// );
 	$imagen->setId($_GET["cat"]);
 	$Infosucursal = $imagen->Infosucursal();
+	// foreach($Infosucursal as $key=>$aux){
+		$Infosucursal["productos"] = utf8_encode($Infosucursal["productos"]);
+		$Infosucursal["direccion"] = utf8_encode($Infosucursal["direccion"]);
+		$Infosucursal["encargado"] = utf8_encode($Infosucursal["encargado"]);
+		
+	// }
 	
 	// $Infosucursal  = $util->EncodeRow($Infosucursal);
 	// $registros = $producto->Enumerate( $parametro );

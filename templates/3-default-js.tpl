@@ -3,7 +3,7 @@
 <script src="{$WEB_ROOT}/js/jquery.jcarousel.min.js"></script>
 <script src="{$WEB_ROOT}/layerslider/jQuery/jquery-easing-1.3.js" type="text/javascript"></script>
 <script src="{$WEB_ROOT}/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
-  <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+  <script src="http://maps.google.com/maps/api/js?keyAIzaSyC85iwEXPOlJsw4CKpkGMxmnq4aLz48Eo4&sensor=false" type="text/javascript"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 $('#layerslider').layerSlider({
@@ -30,4 +30,5 @@ sublayerContainer : 1200
 <script type="text/javascript" src="{$WEB_ROOT}/js/jquery.sticky.js"></script>
 <script type="text/javascript" src="{$WEB_ROOT}/js/jquery.easy-pie-chart.js"></script>
 
-
+  
+<script src="{$WEB_ROOT}/js/{$page}.js" type="text/javascript"></script>
