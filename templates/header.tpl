@@ -27,5 +27,5 @@
 	
 	<!-- Favicons
   ================================================== -->
-  <!--
-	<link rel="shortcut icon" href="images/favicon.ico">-->
+ 
+	<link rel="shortcut icon" href="images/favicon.ico">
