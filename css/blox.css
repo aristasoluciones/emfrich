@@ -57,10 +57,10 @@
 	.blox.dark .mex-title { border-bottom: 4px solid rgba(255, 255, 255, 0.27);} 
 	
 	.parallax-sec, .parallax-sec2, .parallax-sec3 { background:#eee url(../images/section-bg-prlx1.jpg) center bottom fixed; background-repeat:no-repeat;   min-height: 400px;  height: 590px;  margin: 0 auto;  width: 100%;  max-width: 1920px;  position: relative; }
-	.parallax-sec2 { background:#eee url(../images/section-bg-prlx2.jpg) center bottom fixed;}
-	.parallax-sec3 { background:#eee url(../images/mision.jpg?ss) center bottom fixed;}
-	.parallax-sec4 { background:#eee url(../images/vision3.jpg) center bottom fixed;}
-	.parallax-sec5 { background:#eee url(../images/mision.jpg?33) no-repeat; }
+	.parallax-sec2 { background:#eee url(../images/oferta.jpg) no-repeat  center bottom fixed;}
+	.parallax-sec3 { background:#eee url(../images/mision.jpg?ss) no-repeat  center bottom fixed;}
+	.parallax-sec4 { background:#eee url(../images/vision.jpg) no-repeat  center bottom fixed;}
+	.parallax-sec5 { background:#eee url(../images/mision_.jpg?33) no-repeat center bottom fixed;}
 	.parallax-sec6 { background:#eee url(../images/slide-pics/1.jpg) no-repeat; }
 	.parallax-sec7 { background:#eee url(../images/nosotros2.jpg) no-repeat; }	
 	.parallax-sec8 { background:#eee url(../images/politicas.jpg) no-repeat; }		

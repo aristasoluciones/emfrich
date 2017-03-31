@@ -15,7 +15,7 @@
 			<header id="header">
 				<div  class="container">
 					<div class="four columns">
-					<div class="logo"><a href="index.html"><img src="images/logo-1.jpg" width="100" id="img-logo" alt="logo"></a></div>
+					<div class="logo"><a href="index.html"><img src="images/logo-1.png" width="100" id="img-logo" alt="logo"></a></div>
 					</div>		
 				{include file="{$DOC_ROOT}/templates/menus/main.tpl"}
 				</div>
@@ -27,7 +27,7 @@
 			</header>
 		</div>
 			
-		<section class="parallax-sec parallax-sec4" data-type="background" data-speed="">
+		<section class="parallax-sec parallax-sec2" data-type="background" data-speed="">
     <article class="blox">
 	<div class="container" style="top:-100px">
 	<div class="eight columns">

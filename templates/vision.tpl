@@ -15,7 +15,7 @@
 			<header id="header">
 				<div  class="container">
 					<div class="four columns">
-					<div class="logo"><a href="index.html"><img src="images/logo-e.png" width="100" id="logo" alt="logo"></a></div>
+					<div class="logo"><a href="index.html"><img src="images/logo-1.png" width="100" id="logo" alt="logo"></a></div>
 					</div>		
 				{include file="{$DOC_ROOT}/templates/menus/main.tpl"}
 				</div>

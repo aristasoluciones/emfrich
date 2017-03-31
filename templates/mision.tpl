@@ -15,7 +15,7 @@
 			<header id="header">
 				<div  class="container">
 					<div class="four columns">
-					<div class="logo"><a href="index.html"><img src="images/logo-1.jpg" width="100" id="img-logo" alt="logo"></a></div>
+					<div class="logo"><a href="index.html"><img src="images/logo-1.png" width="100" id="img-logo" alt="logo"></a></div>
 					</div>		
 				{include file="{$DOC_ROOT}/templates/menus/main.tpl"}
 				</div>
@@ -41,7 +41,7 @@
 	  <font color="black" size=6>Misión</font>
 	  <br>
 	  <br>
-	 En emfrich estamos comprometidos con la salud y el bienestar de las familias mexicanas, a través de la producción y distribución de productos cárnicos, garantizando nuestros alimentos con la implementación de normas y reglamentos vigentes que sustenten la satisfacción y seguridad de nuestros clientes.
+	 En EMFRICH estamos comprometidos con la salud y el bienestar de las familias mexicanas, a través de la producción y distribución de productos cárnicos, garantizando nuestros alimentos con la implementación de normas y reglamentos vigentes que sustenten la satisfacción y seguridad de nuestros clientes.
 	  
 	  </p>
 </h4>
