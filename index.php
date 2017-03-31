@@ -71,6 +71,7 @@
 	
 		$lstSucursal = $imagen->EnumeraSucursales();
 		$smarty->assign('lstSucursal',$lstSucursal);
+		
 	
 	
 	if($page){
