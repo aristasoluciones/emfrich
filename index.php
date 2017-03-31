@@ -21,21 +21,12 @@
 		'sucursal',
 		'puestos',
 	
-		
-		
-		
-		
+
 		#reportes
 		'lista'
 	);
 	
-	// echo "<pre>"; print_r($_SESSION['Usr']);
-	// echo "<pre>"; print_r($_POST);
-	// echo 
-	// exit;
-	// if($_SESSION['Usr']['tipo']== 'captura'){
-		// $page = "add-list";
-	// }
+
 	
 	$page = $_GET['page'];
 	$section = $_GET['section'];
@@ -74,6 +65,13 @@
 	// }
 	// else{
 	// }
+	
+	// exit;
+	// $imagen->setId($_GET["cat"]);
+	
+		$lstSucursal = $imagen->EnumeraSucursales();
+		$smarty->assign('lstSucursal',$lstSucursal);
+	
 	
 	if($page){
 		

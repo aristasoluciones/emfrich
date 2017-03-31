@@ -25,15 +25,10 @@
           </li>
           <li><a  href="#">SUCURSALES</a>
             <ul>
-              <li><a href="{$WEB_ROOT}/sucursal/cat/1">CARINICERIA SAN JUAN</a></li>
-			  <li><a href="{$WEB_ROOT}/sucursal/cat/2">CARNICERIA GRANJAS</a></li>
-			  <li><a href="{$WEB_ROOT}/sucursal/cat/3">CARNICERIA LA NOVENA</a></li>
-			  <li><a href="{$WEB_ROOT}/sucursal/cat/4">CARNICERIA PACO</a></li>
-			  <li><a href="{$WEB_ROOT}/sucursal/cat/5">CARNICERIA SALOMON</a></li>
-			  <li><a href="{$WEB_ROOT}/sucursal/cat/6">CARNICERIA CYNTHIA</a></li>
-			  <li><a href="{$WEB_ROOT}/sucursal/cat/7">CARNICERIA TERAN</a></li>
-			  <li><a href="{$WEB_ROOT}/sucursal/cat/8"> CARINICERIA JUAN CARLOS</a></li>
-            </ul>
+			{foreach from=$lstSucursal item=item key=key}  
+              <li><a href="{$WEB_ROOT}/sucursal/cat/{$item.sucursalid}">{$item.nombre}</a></li>
+			{/foreach}
+			</ul>
           </li>
 		  <!--
           <li><a href="#">EMFRICH</a>

@@ -1068,6 +1068,22 @@ class Imagen extends Main
 			
 	}
 	
+	public function EnumeraSucursales(){
+		
+		$sql = '
+				SELECT 
+					* 
+				FROM 
+					sucursal
+				WHERE  1 ';
+				$this->Util()->DB()->setQuery($sql);
+				$info = $this->Util()->DB()->GetResult();
+				
+		return $info;
+		
+	}
+	
+	
 	
 	
 						

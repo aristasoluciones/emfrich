@@ -1,0 +1,4 @@
+ALTER TABLE  `sucursal` ADD  `coordenadaX` VARCHAR( 255 ) NOT NULL AFTER  `direccion` ;
+ALTER TABLE  `sucursal` ADD  `coordenadaY` VARCHAR( 225 ) NOT NULL AFTER  `coordenadaX` ;
+ALTER TABLE  `sucursal` ADD  `fotoFachada` VARCHAR( 255 ) NOT NULL AFTER  `coordenadaY` ;
+ALTER TABLE  `sucursal` ADD  `horario` VARCHAR( 255 ) NOT NULL AFTER  `fotoFachada` ;
