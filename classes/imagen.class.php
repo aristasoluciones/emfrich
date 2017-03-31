@@ -1083,6 +1083,28 @@ class Imagen extends Main
 		
 	}
 	
+	public function EnviaComentario(){
+		
+		  $mensaje.= "\nNombre: ". $_POST['txtName'];
+		  $mensaje.= "\nEmail: ".$_POST['email'];
+		  $mensaje.= "\nTelefono: ". $_POST['telefono'];
+		  $mensaje.= "\nAsunto: ". $_POST['asunto'];
+		  $mensaje.= "\nMensaje: \n".$_POST['mensaje'];
+		  $destino= "juanjosepm@live.com";
+		  $remitente = $_POST['email'];
+		  $asunto = "Mensaje enviado por: ".$_POST['txtName'];
+		  if(mail($destino,$asunto,$mensaje,"FROM: $remitente")){
+			  return true;
+		  }else{
+			  return false;
+		  }
+		  
+		  
+		
+	}
+	
+	
+	
 	
 	
 	

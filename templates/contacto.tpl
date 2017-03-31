@@ -82,27 +82,28 @@
 				<div class="clr"></div><br />
 
 
-				<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-				<h5>Nombre</h5>
-				<input id="txtName" title="Se Necesita el Nombre" name="txtName" type="text" class="txbx" value="" required/><br />
-				<h5>Correo</h5>
-				<input id="txtEmail" name="email" type="email"  pattern="" class="txbx" value="" required/><br />
-				<h5>Teléfono</h5>
-				<input id="txtEmail" title="Solo Numeros" name="telefono" type="text" class="txbx" value="" required/><br />
-				<h5>Asunto</h5>
-				<input id="txtSubject" name="asunto" type="text" class="txbx" value="" required/><br />
-				<div class="erabox">
-				<h5>Mensaje</h5>
-				<textarea id="txtText" name="mensaje" class="txbx era" required/></textarea><br />
-				<input type="submit" Value="enviar" class="sendbtn btnSend" >
+				<form id="frmGral" name="" method="post">
+					<input type="hidden" name="type" id="type" value="enviarCorreo">
+					<h5>Nombre</h5>
+					<input id="txtName" title="Se Necesita el Nombre" name="txtName" type="text" class="txbx" value="" required/><br />
+					<h5>Correo</h5>
+					<input id="txtEmail" name="email" type="email"  pattern="" class="txbx" value="" required/><br />
+					<h5>Teléfono</h5>
+					<input id="txtEmail" title="Solo Numeros" name="telefono" type="text" class="txbx" value="" required/><br />
+					<h5>Asunto</h5>
+					<input id="txtSubject" name="asunto" type="text" class="txbx" value="" required/><br />
+					<div class="erabox">
+					<h5>Mensaje</h5>
+					<textarea id="txtText" name="mensaje" class="txbx era" required/></textarea><br />
+					
 
-				<div id="spanMessage">
-				</div>
-				</div>
+					<div id="spanMessage">
+					</div>
+					</div>
 				</form>
-
-				
-
+					<div id="respuesta"></div>
+					
+					<button  onclick="enviarCorreo()" class="sendbtn btnSend">Enviar</button>
 
 
 

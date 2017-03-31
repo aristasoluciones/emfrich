@@ -10,7 +10,7 @@
 	
 </head>
 
-<body class="" onload="initialize()">  
+<body class="" onload="initialize('{$Infosucursal.coordenadaX}','{$Infosucursal.coordenadaY}','{$Infosucursal.nombre}','{$Infosucursal.direccion}')">  
 	<div id="wrap" class="colorskin-0">
 		<div id="sticker">
 			<header id="header">
@@ -91,7 +91,7 @@
 	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.420986860444!2d-93.14026668549575!3d16.75571798846011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQ1JzIwLjYiTiA5M8KwMDgnMTcuMSJX!5e0!3m2!1ses!2smx!4v1490977001422" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 	  -->
 	  <div id="contact-map">
-			 <div id="map_canvas" style="width:1500px; height:500px"></div>
+			 <div id="map_canvas" style="width:900px; height:400px"></div>
 	  </div>
 	  
 	  
@@ -118,6 +118,7 @@
 	</div>
 	{include file="{$DOC_ROOT}/templates/3-default-js.tpl"}
 	<script type="text/javascript">
+	
 		<!-- jQuery(document).ready(function() {     -->
 		   <!-- App.init(); // initlayout and core plugins		    -->
 		<!-- }); -->

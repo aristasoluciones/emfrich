@@ -1,5 +1,5 @@
-function initialize() {
-		var latlng = new google.maps.LatLng(16.762005,  -93.144391); 
+function initialize(x,y,nombre,direccion) {
+		var latlng = new google.maps.LatLng(x,  y); 
 		var settings= {
 			zoom: 15,
 			center: latlng,
@@ -10,7 +10,7 @@ function initialize() {
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		};
 		var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
-		var companyPos = new google.maps.LatLng(16.762005,  -93.144391);
+		var companyPos = new google.maps.LatLng(x,  y);
 		var companyMarker = new google.maps.Marker({
 			  position: companyPos,
 			  map: map,
@@ -20,9 +20,9 @@ function initialize() {
 		  var contentString = '<div id="content">'+
 				'<div id="siteNotice">'+
 				'</div>'+
-				'<h1 id="firstHeading" class="firstHeading">MEX RENTAL LOGISTIC DE MÉXICO</h1>'+
+				'<h1 id="firstHeading" class="firstHeading">'+nombre+'</h1>'+
 				'<div id="bodyContent">'+
-				'<p><br>Renta y servicio de maquinaria para la construccion, Refacciones y partes </p>'+
+				'<p><br>'+direccion+' </p>'+
 				'</div>'+
 				'</div>';
 			 
