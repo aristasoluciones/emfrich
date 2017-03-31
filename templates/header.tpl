@@ -27,4 +27,4 @@
 	
 	<!-- Favicons
   ================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="{$WEB_ROOT}/images/favicon.ico"  >

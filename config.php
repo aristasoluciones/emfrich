@@ -1,6 +1,4 @@
 <?php
-// exit;
-
 switch($_SERVER['HTTP_HOST'])
 {
 	//Local
@@ -43,7 +41,6 @@ define('SQL_PASSWORD', $sqlPw);
 
 define('USER_PAC', '');
 define('PW_PAC', '');
-
 
 define('ITEMS_PER_PAGE', '20');
 

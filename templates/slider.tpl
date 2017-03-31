@@ -1,9 +1,9 @@
 <section id="hero" class="tbg1">
     <div id="layerslider-container-fw">
-      <div id="layerslider" style="width: 100%; height: 300px; margin: 0px auto; ">
+      <div id="layerslider" style="width: 100%; height: 310px; margin: 0px auto; ">
 		
 		 <div class="ls-layer" style="slidedirection: top; slideoutdirection : top; slidedelay: 5000; durationin: 1500; durationout: 1500; delayout: 500;"> 
-				<img src="images/slide-emfrich/banner1.png" class="ls-bg" alt="">
+				<img src="images/slide-emfrich/banner1.jpg" class="ls-bg" alt="">
 				
 				<h1 class="ls-s3" style="position: absolute; font-weight:300; top:50px; left: 30px; color:white;  slidedirection : top; slideoutdirection : top; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500;">
 				<div id="divRegistro" style=" background-color: rgba(54, 55, 58, 0.41); border-radius: 5px;" >
@@ -25,7 +25,7 @@
 		
         <div class="ls-layer" style="slidedirection: top; slidedelay: 6000; durationin: 1500; durationout: 1500; delayout: 500;">
     
-		  <img src="images/slide-emfrich/banner22.png" class="ls-bg" alt="">
+		  <img src="images/slide-emfrich/banner3.jpg" class="ls-bg" alt="">
           <h1 class="ls-s3" style="color:white; position: absolute; top:50px; left: 35%; slidedirection : right; slideoutdirection : left; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 400;">
 				<div id="divRegistro" style=" background-color: rgba(54, 55, 58, 0.41); border-radius: 5px;" >
 					Producción, Comercialización y <br>Distribución
@@ -39,7 +39,7 @@
        </div>
        
         <div class="ls-layer" style="slidedirection: right; slidedelay: 5000; durationin: 1500; durationout: 1500;">
-			<img src="images/slide-emfrich/banner4.png" class="ls-bg" alt=""> 
+			<img src="images/slide-emfrich/banner4.jpg" class="ls-bg" alt=""> 
     
           <h1 class="ls-s3" style="position: absolute; color:white; top:50px; font-weight:bold; left: 65%; slidedirection : right; slideoutdirection : left; durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 400;">
 		  <div id="divRegistro" style=" background-color: rgba(54, 55, 58, 0.41); border-radius: 5px;" >
@@ -53,7 +53,7 @@
        
         <div class="ls-layer" style="slidedirection: right; slideoutdirection : top; slidedelay: 5000; durationin: 1500; durationout: 1500; delayout: 500;"> 
     
-			<img src="images/slide-emfrich/sliderpollo.png" class="ls-bg" alt="">
+			<img src="images/slide-emfrich/banner2.jpg" class="ls-bg" alt="">
      
 
      

@@ -52,7 +52,7 @@
   ================================================== -->
 <nav id="nav-wrap" class="nav-wrap1 twelve columns">
 	<div id="search-form">
-					<form action="#" method="get">
+					<form action="#" method="post">
 						<input type="text" class="search-text-box" id="search-box">
 					</form>
 				</div>
