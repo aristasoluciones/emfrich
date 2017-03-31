@@ -39,8 +39,8 @@
 		<!--<li><a href="{$WEB_ROOT}/PEDIDO">PEDIDO</a>
 
           </li>-->
-		  <li><a href="{$WEB_ROOT}/contacto">CONTACTO</a>		  
-		  <li><a href="{$WEB_ROOT}/ubicanos">UBÍCANOS</a>		  
+		  <li><a href="{$WEB_ROOT}/ubicanos">UBÍCANOS</a>
+		  <li><a href="{$WEB_ROOT}/contacto">CONTACTO</a>			  
           </li>
         </ul>
       </nav>
