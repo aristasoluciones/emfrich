@@ -40,6 +40,7 @@
 
           </li>-->
 		  <li><a href="{$WEB_ROOT}/contacto">CONTACTO</a>		  
+		  <li><a href="{$WEB_ROOT}/ubicanos">UBÍCANOS</a>		  
           </li>
         </ul>
       </nav>

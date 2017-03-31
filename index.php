@@ -20,6 +20,7 @@
 		'otro',	
 		'sucursal',
 		'puestos',
+		'ubicanos',
 	
 
 		#reportes
