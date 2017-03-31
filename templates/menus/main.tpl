@@ -25,7 +25,7 @@
           </li>
           <li><a  href="#">SUCURSALES</a>
             <ul>
-			{foreach from=$lstSucursal item=item key=key}  
+			{foreach from=$lstSucursal item=item key=key}       
               <li><a href="{$WEB_ROOT}/sucursal/cat/{$item.sucursalid}">{$item.nombre}</a></li>
 			{/foreach}
 			</ul>

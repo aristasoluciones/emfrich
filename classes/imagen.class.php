@@ -1074,7 +1074,7 @@ class Imagen extends Main
 				SELECT 
 					* 
 				FROM 
-					sucursal
+					sucursal  
 				WHERE  1 ';
 				$this->Util()->DB()->setQuery($sql);
 				$info = $this->Util()->DB()->GetResult();
