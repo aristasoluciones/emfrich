@@ -45,13 +45,13 @@ CREATE TABLE IF NOT EXISTS `userroles` (
  */
 
 INSERT INTO `permissions` (`ID`, `Lft`, `Rght`, `Title`, `Description`)
-VALUES (1, 0, 1, 'root', 'root');
+VALUES (1, 0, 1, 'all', 'Acceso Total');
 
 INSERT INTO `rolepermissions` (`RoleID`, `PermissionID`, `AssignmentDate`)
 VALUES (1, 1, UNIX_TIMESTAMP());
 
 INSERT INTO `roles` (`ID`, `Lft`, `Rght`, `Title`, `Description`)
-VALUES (1, 0, 1, 'root', 'root');
+VALUES (1, 0, 1, 'masterweb', 'Usuario Root');
 
 INSERT INTO `userroles` (`UserID`, `RoleID`, `AssignmentDate`)
 VALUES (1, 1, UNIX_TIMESTAMP());
