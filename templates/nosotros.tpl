@@ -44,7 +44,7 @@
 			  <font color="black" size="6">¿Quienes Somos?</font>
 			 <br>
 			 <br>
-				Desde hace más de 10 años, Emfrich  (Embutidos Fríos Chiapanecos, S.A. de C.V.),  se encuentra ubicada en la ciudad de Tuxtla Gutiérrez, siendo una empresa privada dentro de la industria de embutidos y productos cárnicos.
+				Desde hace más de 50 años, Emfrich  (Embutidos Fríos Chiapanecos, S.A. de C.V.),  se encuentra ubicada en la ciudad de Tuxtla Gutiérrez, siendo una empresa privada dentro de la industria de embutidos y productos cárnicos.
 				<br>
 				A lo largo de los años la empresa ha invertido en capacitaciones para impulsar los procesos de producción y garantizar la calidad de sus productos; es por ello que se trabaja bajos los más estrictos lineamientos de normas de calidad mexicana y reglas de seguridad alimentaria. 
 				</br>

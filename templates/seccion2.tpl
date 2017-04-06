@@ -12,21 +12,57 @@
         <span class="acc-trigger active"><a href="#"><strong>Producción</strong></a></span>
         <div class="acc-container">
           <article class="content">
-            <p>Descripcion de su produccion</p>
+            <p style="text-align: justify;">
+			Somos una empresa con la experiencia en la generación de chuletas ahumadas, contamos con la instrumentación necesaria, para poder ofrecer productos de alta calidad; la chuleta ahumada es básicamente parte del lomo del cerdo dejando unos 15 centímetros de costilla pegada al costado del espinazo del cerdo; posteriormente se procede hacer el corte de la pieza en dos, para pasar al área de producción donde se lleva a cabo el horneado del producto, así como ahumar las piezas ya preparadas.
+			Al final obtenemos una chuleta horneada de alta calidad con nutrientes, propiedades y beneficios que aporta el producto a tu organismo, sí como la cantidad de cada uno de sus principales nutrientes.
+			Las chuletas de cerdo son un alimento rico en vitamina B1 ya que 100 g. de esta carne contienen 0,82 mg. de vitamina B1.
+			Entre las propiedades nutricionales de las chuletas de cerdo cabe destacar que tiene los siguientes nutrientes: 1,80 mg. de hierro, 21,65 g. de proteínas, 11 mg. de calcio, 0 g. de fibra, 315 mg. de potasio, 3 mg. de yodo, 1,40 mg. de zinc, 0 g. de carbohidratos, 24 mg. de magnesio, 65 mg. de sodio, 9 ug. de vitamina A, 0,20 mg. de vitamina B2, 8,53 mg. de vitamina B3, 0,53 ug. de vitamina B5, 0,55 mg. de vitamina B6, 5,50 ug. de vitamina B7, 3 ug. de vitamina B9, 2 ug. de vitamina B12, 0 mg. de vitamina C, trazas de vitamina D, 0,01 mg. de vitamina E, 10 ug. de vitamina K, 150 mg. de fósforo, 352 kcal. de calorías, 72 mg. de colesterol, 29,50 g. de grasa y 145 mg. de purinas.
+			
+			</p>
           </article>
         </div>
         <!-- Question #2 -->
-        <span class="acc-trigger"><a href="#"><strong>Comercialización y distribución</strong></a></span>
+        <span class="acc-trigger"><a href="#"><strong>Comercialización y distribución de carne de res, cerdo y pollo.</strong></a></span>
         <div class="acc-container">
           <article class="content">
-            <p>Descripcion de comercializacion</p>
+            <p style="text-align: justify;">
+			Básicamente la comercialización que manejamos en EMFRICH, en tendida en un sentido amplio, opera como un mecanismo de coordinación de las transferencias entre los distintos integrantes de la cadena de productor-consumidor.
+				<br>
+				<li> Segmento de mercado</li>
+
+				<li>Mercado meta</li>
+
+				<li>Posicionamiento de mercado</li>
+
+				<li> Variables para segmentar un mercado</li>
+
+				<li>Distribución de los productos al por mayor, al por menor y red de sucursales.</li>
+
+				<li> Canal directo</li>
+
+				<li> Canal indirecto</li>
+				<br>
+				Embutidos fríos chiapanecos (EMFRICH) trata de satisfacer de la mejor manera las necesidades de los clientes presentando la variedad de productos; como son res, cerdo y pollo de alta calidad, estandarizando los precios, para cuidar la economía de nuestros clientes.
+			</p>
           </article>
         </div>
         <!-- Question #3 -->
-      <span class="acc-trigger"><a href="#"><strong>8 Sucursales</strong></a></span>
+      <span class="acc-trigger"><a href="#"><strong>6 distribuidoras de carne de cerdo en Tuxtla.</strong></a></span>
         <div class="acc-container">
           <article class="content">
-            <p></p>
+            <p>
+			<li>La especial</li>
+
+			<li> 2ª oriente </li>
+
+			<li> La chiapaneca</li>
+
+			<li>El amigo</li>
+
+			<li> San roque</li>
+
+			<li>Magaly</li>
+			</p>
           </article>
         </div>
       <!-- end- accordion -->
