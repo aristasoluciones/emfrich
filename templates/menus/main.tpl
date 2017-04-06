@@ -7,7 +7,7 @@
         <ul id="nav">
           <li class="current"><a href="{$WEB_ROOT}/index">Inicio</a>
           </li>
-          <li><a  href="#">NOSOTROS</a>
+          <li><a  href="#">Nosotros</a>
             <ul>
               <li><a href="{$WEB_ROOT}/nosotros">¿Quienes Somos?</a></li>
 			  <li><a href="{$WEB_ROOT}/mision">Misión</a></li>
@@ -15,7 +15,7 @@
 			  <li><a href="{$WEB_ROOT}/oferta">Ofertas de Valor</a></li>
             </ul>
           </li>
-          <li><a href="#">PRODUCTOS</a>
+          <li><a href="#">Productos</a>
             <ul>
 			  <li><a href="{$WEB_ROOT}/producto/cat/1">Carne de Cerdo</a></li>			         
               <li><a href="{$WEB_ROOT}/producto/cat/2">Carne de Res</a></li>
@@ -23,7 +23,7 @@
 
             </ul>
           </li>
-          <li><a  href="#">SUCURSALES</a>
+          <li><a  href="#">Sucursales</a>
             <ul>
 			{foreach from=$lstSucursal item=item key=key}       
               <li><a href="{$WEB_ROOT}/sucursal/cat/{$item.sucursalid}">{$item.nombre}</a></li>
@@ -39,8 +39,8 @@
 		<!--<li><a href="{$WEB_ROOT}/PEDIDO">PEDIDO</a>
 
           </li>-->
-		  <li><a href="{$WEB_ROOT}/ubicanos">UBÍCANOS</a>
-		  <li><a href="{$WEB_ROOT}/contacto">CONTACTO</a>			  
+		  <li><a href="{$WEB_ROOT}/ubicanos">Ubícanos</a>
+		  <li><a href="{$WEB_ROOT}/contacto">Contacto</a>			  
           </li>
         </ul>
       </nav>
