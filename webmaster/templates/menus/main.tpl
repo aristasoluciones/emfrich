@@ -24,7 +24,7 @@
         <a href="javascript:;" class="nav-link nav-toggle">
         <i class="icon-settings"></i> 
         <span class="title">Configuracion </span>
-       {if $page =='rol' ||$page=='config_role'|| $page=='perm_accion'}
+       {if $page =='rol' ||$page=='config_role'|| $page=='perm_accion'|| $page=='usuario'}
 		 <span class="selected"></span>
          <span class="arrow open"></span>
          {else}
@@ -60,11 +60,11 @@
 	</li>  
 	{/if}
 	 {if in_array('catalogo',$privilegios) or $typeUser==1} 
-    <li class="nav-item {if $page =='sucursal' ||$page=='producto'||$page=='requisito'||$page=='config_tramite'||$page=='delegacion'}active open{/if}">
+    <li class="nav-item {if $page =='sucursal' ||$page=='producto'||$page=='imagen'||$page=='puesto'}active open{/if}">
         <a href="javascript:;" class="nav-link nav-toggle">
         <i class="icon-briefcase"></i> 
         <span class="title">Catalogos</span>
-		{if $page=='sucursal'||$page=='producto'}
+		{if $page=='sucursal'||$page=='producto' || page=='puesto' || page=='imagen'}
 		 <span class="selected"></span>
          <span class="arrow open"></span>
         {else}
@@ -89,11 +89,19 @@
 				</a>
 			</li>
 			{/if}
-			{if in_array('puestos',$privilegios) or $typeUser==1} 
-			<li class="nav-item {if $page=='d'}active open{/if}">
-				<a class="nav-link " href="{$WEB_ROOT}/cat_tramite">
+			{if in_array('puesto',$privilegios) or $typeUser==1} 
+			<li class="nav-item {if $page=='puesto'}active open{/if}">
+				<a class="nav-link " href="{$WEB_ROOT}/puesto">
 					<i class="icon-briefcase"></i>
-					<span class="title">Puestos del personal</span>
+					<span class="title">Personal </span>
+				</a>
+			</li>
+			{/if}
+			{if in_array('imagen',$privilegios) or $typeUser==1} 
+			<li class="nav-item {if $page=='imagen'}active open{/if}">
+				<a class="nav-link " href="{$WEB_ROOT}/imagen">
+					<i class="icon-briefcase"></i>
+					<span class="title">Catalogo de imagenes</span>
 				</a>
 			</li>
 			{/if}
@@ -101,48 +109,7 @@
         </ul>
 	</li> 
 	{/if}
-	{if in_array('documento',$privilegios)}
-	<li class="nav-item {if $page=='doc_crear'||$page=='doc_lista'}active open{/if}">
-        <a href="javascript:;" class="nav-link nav-toggle">
-        <i class="icon-list"></i> 
-        <span class="title">Documentos </span>
-       {if $page =='doc_crear' ||$page=='doc_lista'}
-		 <span class="selected"></span>
-         <span class="arrow open"></span>
-         {else}
-		   <span class="arrow"></span>
-        {/if}
-        </a>
-        <ul class="sub-menu">
-		     <li class="nav-item {if $page=='doc_crear'}active{/if}">
-			    <a href="{$WEB_ROOT}/doc_crear" class="nav-link ">Nuevo Tramite</a>
-             </li>
-			 <li class="nav-item {if $page=='doc_lista'}active{/if}">
-                <a href="{$WEB_ROOT}/lista" class="nav-link ">Lista de tramites </a>
-             </li>
-			
 
-
-        </ul>
-	</li> 
-	{/if}
-	{if in_array('reporte',$privilegios)}
-	<li class="nav-item {if $page=='report'}active open{/if}">
-        <a href="javascript:;" class="nav-link nav-toggle">
-        <i class="icon-bar-chart"></i> 
-        <span class="title">Reportes </span>
-       {if $page =='report'}
-		 <span class="selected"></span>
-         <span class="arrow open"></span>
-         {else}
-		   <span class="arrow"></span>
-        {/if}
-        </a>
-        <ul class="sub-menu">
-		    
-        </ul>
-	</li> 
-	{/if} 
 </ul>
 </div>
 <!-- END SIDEBAR MENU

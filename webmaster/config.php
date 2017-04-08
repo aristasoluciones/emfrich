@@ -5,7 +5,8 @@ switch($_SERVER['HTTP_HOST'])
 	//Local
 	case 'localhost': 	
 			$webRoot = 'http://'.$_SERVER['HTTP_HOST'].'/emfrich/webmaster'; 
-			$docRoot = $_SERVER['DOCUMENT_ROOT'].'/emfrich/webmaster'; 
+			$docRoot = $_SERVER['DOCUMENT_ROOT'].'/emfrich/webmaster';
+			$docRootImg = $_SERVER['DOCUMENT_ROOT'].'/emfrich/images';  
 			$sqlUser = 'root'; 
 			$sqlPw = ''; 
 			$sqlHost = 'localhost'; 
@@ -27,6 +28,7 @@ switch($_SERVER['HTTP_HOST'])
 	default:	
 			$webRoot = 'http://'.$_SERVER['HTTP_HOST'].'/webmaster'; 
 			$docRoot = $_SERVER['DOCUMENT_ROOT'].'/webmaster'; 
+			$docRootImg = $_SERVER['DOCUMENT_ROOT'].'/images';
 			$rutaDocumento =  'http://'.$_SERVER['HTTP_HOST'].'/webmaster';
 			$rutaPortada =   'http://'.$_SERVER['HTTP_HOST'].'/webmaster';
 			$sqlUser = 'emfrichc_emfrich'; 
@@ -39,6 +41,7 @@ switch($_SERVER['HTTP_HOST'])
 /** RUTAS GENERALES **/
 
 define('DOC_ROOT', $docRoot);
+define('DOC_ROOT_IMG', $docRootImg);
 define('WEB_ROOT', $webRoot);
 
 /** BASE DE DATOS **/
@@ -56,6 +59,6 @@ define('ITEMS_PER_PAGE', '20');
 /** NOMBRE DEL SISTEMA **/
 
 define('PROJECT_NAME', 'WEBMASTER ::.');
-define('FOOTER', 'Creado por Arista Soluciones ');
+define('FOOTER', '2017 Creado por Arista Soluciones ');
 
 ?>

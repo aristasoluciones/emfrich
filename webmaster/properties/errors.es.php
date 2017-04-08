@@ -69,4 +69,9 @@ $property['error'][10133] = 'La Lista Fue Generada Correctamente.';
 $property['error'][10134] = 'El nombre de usuario ya se encuentra registrado';
 $property['error'][10135] = 'La direccion de correo electronico ya se encuentra registrado';
 
+$property['error'][10136] = 'Archivo no adjunto';
+$property['error'][10137] = 'Hubo un error al mover archivo intentelo de nuevo';
+
+$property['error'][10138] = 'Solo se aceptan imagenes PNG / JPG revisar archivo';
+
 ?>

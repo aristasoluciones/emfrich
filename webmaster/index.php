@@ -26,6 +26,7 @@
 		'sucursal',
 		'puesto',
 		'producto',
+		'imagen',
 		
 		#documentos
 		'doc_crear',
@@ -70,6 +71,7 @@
 	//$miColor = $documento->extraeStilo();
 	
 	$smarty->assign('miColor',$miColor);
+	$smarty->assign('FOOTER', FOOTER);
 
 	if($page == 'login'){
 		$smarty->display(DOC_ROOT.'/templates/login.tpl');

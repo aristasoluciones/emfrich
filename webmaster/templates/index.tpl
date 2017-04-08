@@ -23,9 +23,7 @@
 		<div class="page-sidebar-wrapper">
 		  <!-- BEGIN SIDEBAR -->
 			{include file="{$DOC_ROOT}/templates/menus/main.tpl"}
-			{if $usr.tipo eq 'operacion'}
-				{include file="{$DOC_ROOT}/templates/menus/main-operacion.tpl"}
-			{/if}	
+			
 		</div>
 		<!-- END SIDEBAR -->
 		<!-- BEGIN CONTENT -->

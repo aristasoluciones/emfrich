@@ -8,7 +8,7 @@
     <div class="page-footer">
         <div class="page-footer-inner"><!--
 			 <img src="{$WEB_ROOT}/images/poweredby.png" border="0" width="85" height="" />-->
-           2016 <small>Creado por promes</small>
+           <small>{$FOOTER}</small>
         </div>
         <div class="scroll-to-top">
                         <i class="icon-arrow-up"></i>

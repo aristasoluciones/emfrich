@@ -3,7 +3,8 @@
 <table class="table table-striped table-bordered table-hover" id="sample_3">
     <thead>
         <tr>
-            <th>Tipo</th>
+            <th>Nombre </th>
+            <th>Tipo </th>
             <th>Descripcion</th>
             <th>Acci&oacute;n </th>
         </tr>
@@ -11,16 +12,16 @@
     <tbody>
     	{foreach from=$registros item=item key=key}        	
         <tr>
-            <td>{$item.Title}</td>
-             <td>{$item.Description}</td>     
+            <td>{$item.nombre}</td>
+            <td>{$item.tipo}</td>
+            <td>{$item.descripcion}</td>
             <td><div align="center">
-				<a href="javascript:void(0)" onClick="EditReg({$item.ID})" title="Editar tramite">
+                {if in_array('edit_producto',$privilegios) or $typeUser==1}
+				<!-- <a href="javascript:void(0)" onClick="EditReg({$item.categoriaId})" title="Editar producto">
 					<img src="{$WEB_ROOT}/images/png-icon/big/glyphicons_150_edit.png" border="0">
-				</a>
-				<a href="{$WEB_ROOT}/config_role/id/{$item.ID}" title="Configurar rol" data-toggle="modal" class="btn">
-					<img src="{$WEB_ROOT}/images/png-icon/big/glyphicons_136_cogwheel.png">
-				</a>
-				
+				</a> -->
+                {/if}
+                				
             </div>
             </td>
         </tr>

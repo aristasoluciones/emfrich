@@ -4,8 +4,10 @@
     <thead>
         <tr>
             <th>#</th>
-            <th>Descripcion </th>
-            <th>Nombre corto </th>
+            <th>Nombre </th>s
+            <th>Cargo </th>
+            <th>Profesion </th>
+            <th>Oficinas</th>
             <th>Acci&oacute;n </th>
         </tr>
     </thead>
@@ -13,16 +15,19 @@
     	{foreach from=$registros item=item key=key}        	
         <tr>
             <td>{$key+1}</td>
-            <td>{$item.Description}</td>
-            <td>{$item.Title}</td>
+            <td>{$item.nombre}</td>
+            <td>{$item.cargo}</td>
+            <td>{$item.profesion}</td>
+            <td>{$item.oficina}</td>
 			<td><div align="center">
-				<a href="javascript:void(0)" onClick="EditReg({$item.ID})" title="Editar tramite">
+             {if in_array('edit_puesto',$privilegios) or $typeUser==1}
+				<a href="javascript:void(0)" onClick="EditReg({$item.puestosid})" title="Editar personal">
 					<img src="{$WEB_ROOT}/images/png-icon/big/glyphicons_150_edit.png" border="0">
 				</a>
 				<!-- <a href="javascript:void(0)" onClick="EditReg({$item.requisito_id})" title="Configurar tramite">
 					<img src="{$WEB_ROOT}/images/png-icon/big/glyphicons_136_cogwheel.png">
 				</a> -->
-				
+			  {/if}	
             </div>
             </td>
         </tr>

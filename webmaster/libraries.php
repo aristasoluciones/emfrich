@@ -34,6 +34,9 @@ $objRole = new Role;
 include_once(DOC_ROOT.'/classes/config.class.php');
 $config = new Config;
 
+include_once(DOC_ROOT.'/classes/puesto.class.php');
+$puesto = new Puesto;
+
 
 // CLASSES DE SECCION CATALOGOS
 include_once(DOC_ROOT.'/classes/producto.class.php');
@@ -41,6 +44,9 @@ $producto = new Producto;
 
 include_once(DOC_ROOT.'/classes/sucursal.class.php');
 $sucursal = new Sucursal;
+
+include_once(DOC_ROOT.'/classes/imagen.class.php');
+$imagen = new Imagen;
 
 include_once(DOC_ROOT.'/classes/class.phpmailer.php');
 include_once(DOC_ROOT.'/classes/class.smtp.php');

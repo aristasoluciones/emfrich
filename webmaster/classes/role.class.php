@@ -62,10 +62,9 @@ class Role extends Main
 				ORDER BY Title DESC
 				';
 		$this->Util()->DB()->setQuery($sql);
-		$data['result'] = $this->Util()->DB()->GetResult();
+		$data = $this->Util()->DB()->GetResult();
 		
-		$data['pages'] = $resPage['pages'];
-		$data['info'] = $resPage['info'];
+	
 					
 		return $data;
 		

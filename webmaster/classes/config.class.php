@@ -32,7 +32,7 @@ class Config extends Main
 				ORDER BY Description DESC
 				';
 		$this->Util()->DB()->setQuery($sql);
-		$data['result'] = $this->Util()->DB()->GetResult();
+		$data= $this->Util()->DB()->GetResult();
 		
 
 					
