@@ -12,9 +12,6 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 
--- Volcando estructura de base de datos para emfrichc_emfrich
-CREATE DATABASE IF NOT EXISTS `emfrichc_emfrich` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `emfrichc_emfrich`;
 
 -- Volcando estructura para tabla emfrichc_emfrich.productos_categorias
 CREATE TABLE IF NOT EXISTS `productos_categorias` (

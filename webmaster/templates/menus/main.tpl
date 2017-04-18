@@ -60,11 +60,11 @@
 	</li>  
 	{/if}
 	 {if in_array('catalogo',$privilegios) or $typeUser==1} 
-    <li class="nav-item {if $page =='sucursal' ||$page=='producto'||$page=='imagen'||$page=='puesto'}active open{/if}">
+    <li class="nav-item {if $page =='sucursal' ||$page=='producto'||$page=='imagen'||$page=='puesto'||$page=='producto_cat'}active open{/if}">
         <a href="javascript:;" class="nav-link nav-toggle">
         <i class="icon-briefcase"></i> 
         <span class="title">Catalogos</span>
-		{if $page=='sucursal'||$page=='producto' || page=='puesto' || page=='imagen'}
+		{if $page=='sucursal'||$page=='producto' || page=='puesto' || page=='imagen' || page=='producto_cat'}
 		 <span class="selected"></span>
          <span class="arrow open"></span>
         {else}
@@ -74,10 +74,10 @@
         </a>
         <ul class="sub-menu">
            {if in_array('producto',$privilegios) or $typeUser==1} 
-			<li class="nav-item {if $page=='producto'}active open{/if}">
+			<li class="nav-item {if $page=='producto'||$page=='producto_cat'}active open{/if}">
 				<a class="nav-link " href="{$WEB_ROOT}/producto">
 					<i class="icon-briefcase"></i>
-					<span class="title">Productos o Articulos</span>
+					<span class="title">Categorias de producto</span>
 				</a>
 			</li>
 			{/if}

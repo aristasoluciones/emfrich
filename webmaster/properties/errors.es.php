@@ -3,6 +3,8 @@
 $property['error'][1] = 'Has editado satisfactoriamente un Registro';
 $property['error'][2] = 'Has insertado satisfactoriamente un Registro';
 $property['error'][3] = 'El Registro se elimino Exitosamente';
+$property['error'][4] = 'El Registro se dio de baja correctamente';
+$property['error'][5] = 'El Registro se activo correctamente';
 
 $property['error'][10000] = 'La cadena tiene muy pocos caracteres Campo';
 $property['error'][10001] = 'No es un URL Valido';

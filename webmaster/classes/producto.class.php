@@ -7,11 +7,20 @@ class Producto extends Main
 	private $descripcion;
 	private $aquien;
 	private $ventaja;
+	private $url;
+	private $nombre_archivo;
+	private $extension;
+	private $pcat_id;
+
 	
 
 	public function setId($value){
 		$this->Util()->ValidateInteger($value);
 		$this->id = $value;
+	}
+	public function setPcatId($value){
+		$this->Util()->ValidateInteger($value);
+		$this->pcat_id = $value;
 	}
 	public function setNombre($value){
 		if($this->Util()->ValidateRequireField($value, 'Nombre')){
@@ -37,10 +46,53 @@ class Producto extends Main
 			$this->ventaja= $value;
 		}
 	}
- 
+	//setters para agregar productos a categoria
+	public function setFile($value){
+		if($value["error"]===4)
+		{
+		  $this->Util()->setError(10136, 'error', '');
+		}
+
+		if($value["type"]!="image/jpeg"&&$value["type"]!="image/png")
+		{
+		  $this->Util()->setError(10138, 'error', '');
+		}
+		
+	}
+	public function setUrl($value){
+		/*if($this->Util()->ValidateRequireField($value, 'Nombre')){*/
+			$this->Util()->ValidateString($value, 100, 0, '');
+			$this->url = $value;
+		/*}*/
+	}
+	public function setNarchivo($value){
+		/*if($this->Util()->ValidateRequireField($value, 'Nombre')){*/
+			$this->Util()->ValidateString($value, 100, 0, '');
+			$this->nombre_archivo = $value;
+		/*}*/
+	}
+	public function setExtension($value){
+		/*if($this->Util()->ValidateRequireField($value, 'Nombre')){*/
+			$this->Util()->ValidateString($value, 100, 0, '');
+			$this->extension = $value;
+		/*}*/
+	}
+
+    public function getLastIdPcat(){
+		$sql = 'SELECT MAX(producto_categoria_id) FROM productos_categorias';
+		$this->Util()->DB()->setQuery($sql);
+		$single = $this->Util()->DB()->GetSingle();		
+		return $single;
+	}
 	//Ontener datos y listados
 	public function Info(){
 		$sql = 'SELECT * FROM categoria WHERE categoriaId = "'.$this->id.'"';
+		$this->Util()->DB()->setQuery($sql);
+		$info = $this->Util()->DB()->GetRow();		
+		return $info;
+	}
+	public function Info2(){
+		$sql = 'SELECT * FROM productos_categorias WHERE producto_categoria_id = "'.$this->id.'"';
 		$this->Util()->DB()->setQuery($sql);
 		$info = $this->Util()->DB()->GetRow();		
 		return $info;
@@ -128,20 +180,116 @@ class Producto extends Main
 		
 		return true;
 	}//Update
-	
-	public function Delete(){
-		
+	public function getListProductoCategoria(){
+      $sql = "SELECT C.nombre as cat_name,PC.* FROM productos_categorias PC
+      JOIN categoria C on PC.categoria_id = C.categoriaId where PC.categoria_id=".$this->id;
+
+      $this->Util()->DB()->setQuery($sql);
+      $result = $this->Util()->DB()->GetResult();
+
+      return $result;
+
+	}
+	public function SavePcat(){
+						
+		if($this->Util()->PrintErrors()){ 
+			return false; 
+		}
+		$sql = "
+		INSERT INTO  productos_categorias (
+				`nombre`, 
+				`descripcion`,
+				`categoria_id`,
+				`nombre_archivo`,
+				`extension`,
+				`url`,
+				`status`
+				)
+				VALUES (
+				'".$this->nombre."',
+				'".$this->descripcion."',
+				".$this->id.",
+				'".$this->nombre_archivo."',
+				'".$this->extension."',
+				'".$this->url."',
+				'Activo'
+				);
+		";
+		$this->Util()->DB()->setQuery($sql);
+		$this->Util()->DB()->InsertData();
+			
+		$this->Util()->setError(10129, 'complete', '');
+		$this->Util()->PrintErrors();
+		return true;	
+	}//Save
+	public function UpdatePcat(){		
+		if($this->Util()->PrintErrors()){ 
+			return false; 
+		}
 		$sql = 'UPDATE 
-				categoria SET 
-				status = "baja"
-				WHERE categoriaId = "'.$this->id.'"';
+				productos_categorias SET 
+				nombre = "'.$this->nombre.'",			
+				descripcion = "'.$this->descripcion.'",
+				nombre_archivo = "'.$this->nombre_archivo.'",
+				extension = "'.$this->extension.'",
+				url = "'.$this->url.'"
+				WHERE producto_categoria_id = "'.$this->pcat_id.'"';
 				
 		$this->Util()->DB()->setQuery($sql);
 		$this->Util()->DB()->UpdateData();
 			
-		$this->Util()->setError(3, 'error', '');
+		$this->Util()->setError(10130, 'complete', '');
 		$this->Util()->PrintErrors();
 		
+		return true;
+	}//Update
+	
+	public function UpdateData(){		
+		$sql = 'UPDATE 
+				productos_categorias SET 
+				nombre_archivo = "'.$this->nombre_archivo.'",			
+				extension = "'.$this->extension.'"
+				WHERE producto_categoria_id = "'.$this->id.'"';
+				
+		$this->Util()->DB()->setQuery($sql);
+		$this->Util()->DB()->UpdateData();
+	   return true;
+	}//Update
+
+	public function RollBackData(){		
+		$sql = 'DELETE * FROM productos_categorias where producto_categoria_id = "'.$this->id.'"';
+				
+		$this->Util()->DB()->setQuery($sql);
+		$this->Util()->DB()->DeleteData();
+	   return true;
+	}//Update
+	public function Delete(){
+		
+		$sql = 'UPDATE 
+				productos_categorias SET 
+				status = "Baja"
+				WHERE producto_categoria_id = "'.$this->id.'"';
+				
+		$this->Util()->DB()->setQuery($sql);
+		$this->Util()->DB()->UpdateData();
+
+		$this->Util()->setError(4, 'complete', '');
+		$this->Util()->PrintErrors();
+		return true;
+		
+	}//
+	public function Activar(){
+		
+		$sql = 'UPDATE 
+				productos_categorias SET 
+				status = "Activo"
+				WHERE producto_categoria_id = "'.$this->id.'"';
+				
+		$this->Util()->DB()->setQuery($sql);
+		$this->Util()->DB()->UpdateData();
+
+		$this->Util()->setError(5, 'complete', '');
+		$this->Util()->PrintErrors();
 		return true;
 		
 	}//

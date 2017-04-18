@@ -21,8 +21,13 @@
             <td><div align="center">
                 {if in_array('edit_producto',$privilegios) or $typeUser==1}
 				<a href="javascript:void(0)" onClick="EditReg({$item.categoriaId})" title="Editar producto">
-					<img src="{$WEB_ROOT}/images/png-icon/big/glyphicons_150_edit.png" border="0">
+					<img src="{$WEB_ROOT}/images/icons/pencil-16.png" border="0">
 				</a>
+                {/if}
+                {if in_array('add_pcategoria',$privilegios) or $typeUser==1}
+                <a href="{$WEB_ROOT}/producto_cat/id/{$item.categoriaId}"  title="Agregar producto">
+                    <img src="{$WEB_ROOT}/images/icons/add-16.png" border="0">
+                </a>
                 {/if}
                 				
             </div>

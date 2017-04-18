@@ -59,12 +59,10 @@
                 $last_id = $imagen->getLastId();
                 $concatname = $last_id+1;
                 $imagen->setNombre( $_FILES["image_file"]["tmp_name"]);
-
                 
-				$success = $imagen->Save();
+                //se guarda imagen de la categoria
+				$success = $imagen->SavePcat();
 				if($success){	
-
-
                  $archivo_temp =  $_FILES["image_file"]["tmp_name"];
                  $extension =  explode(".",$_FILES["image_file"]["name"]);
                  $ext = end($extension);

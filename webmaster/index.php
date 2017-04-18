@@ -26,6 +26,7 @@
 		'sucursal',
 		'puesto',
 		'producto',
+		'producto_cat',
 		'imagen',
 		
 		#documentos

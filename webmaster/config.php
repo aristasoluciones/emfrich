@@ -6,6 +6,7 @@ switch($_SERVER['HTTP_HOST'])
 	case 'localhost': 	
 			$webRoot = 'http://'.$_SERVER['HTTP_HOST'].'/emfrich/webmaster'; 
 			$docRoot = $_SERVER['DOCUMENT_ROOT'].'/emfrich/webmaster';
+			$webRootImg = 'http://'.$_SERVER['HTTP_HOST'].'/emfrich/images'; 
 			$docRootImg = $_SERVER['DOCUMENT_ROOT'].'/emfrich/images';  
 			$sqlUser = 'root'; 
 			$sqlPw = ''; 
@@ -27,7 +28,8 @@ switch($_SERVER['HTTP_HOST'])
 	//Produccion
 	default:	
 			$webRoot = 'http://'.$_SERVER['HTTP_HOST'].'/webmaster'; 
-			$docRoot = $_SERVER['DOCUMENT_ROOT'].'/webmaster'; 
+			$docRoot = $_SERVER['DOCUMENT_ROOT'].'/webmaster';
+			$webRootImg = 'http://'.$_SERVER['HTTP_HOST'].'/images';  
 			$docRootImg = $_SERVER['DOCUMENT_ROOT'].'/images';
 			$rutaDocumento =  'http://'.$_SERVER['HTTP_HOST'].'/webmaster';
 			$rutaPortada =   'http://'.$_SERVER['HTTP_HOST'].'/webmaster';
@@ -42,6 +44,7 @@ switch($_SERVER['HTTP_HOST'])
 
 define('DOC_ROOT', $docRoot);
 define('DOC_ROOT_IMG', $docRootImg);
+define('WEB_ROOT_IMG', $webRootImg);
 define('WEB_ROOT', $webRoot);
 
 /** BASE DE DATOS **/

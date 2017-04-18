@@ -6,8 +6,9 @@
 #todo local en los puestos de trabajo
 
 config.php
+/images/productos_categorias/.*
 /webmaster/ajax/templates_c
 /webmaster/templates_c
-/webmaster/config.php
+
 
 
