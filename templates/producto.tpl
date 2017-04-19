@@ -53,13 +53,13 @@
 		<h3>{$InfoCategoria.nombre}</h3>
 		<br>
 		<br>
-		<p> {$InfoCategoria.descripcion}
+		<p  style="text-align: justify;"> {$InfoCategoria.descripcion}
 		</p>
 		<h3></h3>
 		<br>
 		
 
-		<p>{$InfoCategoria.aquien}</p>
+		<p  style="text-align: justify;">{$InfoCategoria.aquien}</p>
 		<BR>
 		
 		<h3>VENTAJAS</h3>
