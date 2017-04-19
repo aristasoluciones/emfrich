@@ -128,6 +128,8 @@ A lo largo de los años la empresa ha invertido en capacitaciones para impulsar 
 <font size="4" color="black">La carne de Res </font>contiene abundante vitamina B6 la cual puede mejorar el sistema inmune y acelerar el metabolismo y la síntesis de la proteína con el fin de mejorar la salud física para el cuerpo
 
 		</p>
+		<br>
+		<br>
         <div class="socailfollow">
 		<!--<a href="#" class="facebook"><i class="fa-facebook"></i></a> <a href="#" class="dribble"><i class="fa-dribbble"></i></a> <a href="#" class="twitter"><i class="fa-twitter"></i></a> <a href="#" class="google"><i class="fa-google"></i></a> <a href="#" class="linkedin"><i class="fa-linkedin"></i></a>
 		-->
@@ -142,6 +144,9 @@ A lo largo de los años la empresa ha invertido en capacitaciones para impulsar 
         <p>
 			<font size="4" color="black">La Carne de pollo</font> contiene proteína que contribuye al crecimiento muscular, mejora el desarrollo y ayuda a mantener un peso corporal saludable y a bajar de peso.
 			</p>
+			<br>
+			<br>
+			<br>
         <div class="socailfollow">
 		<!--<a href="#" class="facebook"><i class="fa-facebook"></i></a> <a href="#" class="dribble"><i class="fa-dribbble"></i></a> <a href="#" class="twitter"><i class="fa-twitter"></i></a> <a href="#" class="google"><i class="fa-google"></i></a> <a href="#" class="linkedin"><i class="fa-linkedin"></i></a>
 		-->
