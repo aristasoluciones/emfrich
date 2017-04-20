@@ -104,7 +104,7 @@
       <figure class="our-team"> <img src="images/p1.jpg" alt="">
         <figcaption><h4><strong>Cerdo<br>
           <small>__</small></strong></h4>
-        <p>
+        <p style="text-align: justify;">
 		<font size="4" color="black">La carne de cerdo </font>es un alimento imprescindible en todas las etapas de la vida pues contiene un alto contenido en proteínas de alto valor biológico y aporta diversos minerales como potasio, fósforo, zinc y hierro, además de que es fuente de vitaminas del grupo B como la B1, B3, B6 y B12
 		<b>
 		
@@ -128,9 +128,8 @@
       <figure class="our-team"> <img src="images/p2.jpg" alt="">
         <figcaption><h4><strong>Res<br>
           <small>--</small></strong></h4>
-        <p>
-<font size="4" color="black">La carne de Res </font>contiene abundante vitamina B6 la cual puede mejorar el sistema inmune y acelerar el metabolismo y la síntesis de la proteína con el fin de mejorar la salud física para el cuerpo
-
+        <p style="text-align: justify;">
+		<font size="4" color="black">La carne de Res </font>contiene abundante vitamina B6 la cual puede mejorar el sistema inmune y acelerar el metabolismo y la síntesis de la proteína con el fin de mejorar la salud física para el cuerpo
 		</p>
 		<br>
 		<br>
@@ -145,7 +144,7 @@
       <figure class="our-team"> <img src="images/p3.jpg" alt="">
         <figcaption><h4><strong>Pollo<br>
           <small>--</small></strong></h4>
-        <p>
+        <p style="text-align: justify;">
 			<font size="4" color="black">La Carne de pollo</font> contiene proteína que contribuye al crecimiento muscular, mejora el desarrollo y ayuda a mantener un peso corporal saludable y a bajar de peso.
 			</p>
 			<br>
