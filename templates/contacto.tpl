@@ -62,7 +62,7 @@
 				<br>
 				<p><strong>Telefonos:</strong></p>
 				<p>
-				961-60-4-50-19  <br />
+				<br />
 				  <br />
 				
 				</p>

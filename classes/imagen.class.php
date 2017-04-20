@@ -173,11 +173,22 @@ class Imagen extends Main
 		
 		
 			$sql = 'SELECT * FROM categoria WHERE categoriaId = '.$this->id.'';
+
 			$this->Util()->DB()->setQuery($sql);
 			$info = $this->Util()->DB()->GetRow();
-
+			
+			
+				
+			$sql = 'SELECT * FROM productos_categorias WHERE categoria_id = '.$this->id.'';
+			$this->Util()->DB()->setQuery($sql);
+			$lst = $this->Util()->DB()->GetResult();
+			
+			
+			
+		$data["info"] = $info;
+		$data["productos"] = $lst;
 		
-		return $info;
+		return $data;
 	}//Info
 	
 	

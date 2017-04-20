@@ -14,7 +14,7 @@
 	$imagen->setId($_GET["cat"]);
 	$InfoCategoria = $imagen->InfoCategoria();
 	
-	$InfoCategoria  = $util->EncodeRow($InfoCategoria);
+	$InfoCategoria["info"]  = $util->EncodeRow($InfoCategoria["info"]);
 	// $registros = $producto->Enumerate( $parametro );
 	
 	// echo'<PRE>';

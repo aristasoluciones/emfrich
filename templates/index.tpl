@@ -11,6 +11,22 @@
 
 <body class="" >
 	<div id="wrap" class="colorskin-0">
+		<section class="top-bar">
+			<div class="container">
+			<div class="top-links">	
+				<!--<a href="#">Form</a> | <a href="#">Terms</a> | <a href="#">Contact</a>
+				-->
+				</div>
+			<div class="socailfollow">
+				<!--<a href="#" class="facebook">
+				<i class="fa-facebook"></i></a>
+				<a href="#" class="dribble"><i class="fa-dribbble"></i></a>
+				<a href="#" class="vimeo"><i class="fa-vimeo-square"></i></a>
+				<a href="#" class="google"><i class="fa-google"></i></a>-->
+				<a class="facebook" href="webmaster"> <i class="fa-dribbble">Sistema</i> </a>
+			</div>
+			</div>
+		</section>
 		<div id="sticker">
 			<header id="header">
 				<div  class="container">
