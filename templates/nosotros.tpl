@@ -26,15 +26,17 @@
 				</div>
 			</header>
 		</div>
-			
-			
+			<br>
+			<br>
+			<br>
+
 			<section class="parallax-sec parallax-sec7" data-type="background" data-speed="">
     <article class="blox">
 			<div class="container" style="top:-100px">
 			<div class="eight columns">
 			<p>&nbsp;</p>
 			</div>
-			<div class="eight columns alignleft">
+			<div class="eight columns alignleft" style="height:600px; overflow:scroll">
 			
 			
 			  <hr><br>

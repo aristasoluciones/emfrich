@@ -1,4 +1,4 @@
-<footer id="footer" style=" background-image:url(images/footer.jpg">
+<footer id="footer" style=" background-image:url({$WEB_ROOT}/images/footer.jpg">
     <section class="container footer-in">
 	    
       <div class="one-third column">
