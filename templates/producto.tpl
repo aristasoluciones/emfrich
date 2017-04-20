@@ -92,7 +92,7 @@
 				<div  class="container">
 					<div class="four columns">
 					<div class="logo">
-					<a href="#"><img src="{$WEB_ROOT}/images/logo-1.png" width="100" id="img-logo" alt="logo"></a>
+					<a href="#"><img src="{$WEB_ROOT}/images/logo-1.png" width="" id="img-logo" alt="logo"></a>
 					
 					</div>
 					</div>		
