@@ -27,7 +27,7 @@
 			</header>
 		</div>
 			
-		<section class="parallax-sec parallax-sec2" data-type="background" data-speed="">
+	<section class="parallax-sec parallax-sec2" data-type="background" data-speed="">
     <article class="blox">
 	<div class="container" style="top:-100px">
 	<div class="eight columns">
@@ -63,6 +63,14 @@
 		<br>
 		<br>
 		° Seguimiento post-venta. 
+		<br>
+		° Más de 10 años de experiencia en el ramo.
+		<br>
+		<br>
+		° Garantía de los productos. 
+		<br>
+		<br>
+		° Seguimiento post-venta.
 		
 	 </p>
 </h4>

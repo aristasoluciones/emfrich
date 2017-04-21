@@ -27,7 +27,7 @@
 			</header>
 		</div>
 			
-		<section class="parallax-sec parallax-sec5" data-type="background" data-speed="">
+	<section class="parallax-sec parallax-sec5" data-type="background" data-speed="">
     <article class="blox">
 	<div class="container" style="top:-100px">
 	<div class="eight columns">

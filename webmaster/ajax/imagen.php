@@ -61,7 +61,7 @@
                 $imagen->setNombre( $_FILES["image_file"]["tmp_name"]);
                 
                 //se guarda imagen de la categoria
-				$success = $imagen->SavePcat();
+				$success = $imagen->Save();
 				if($success){	
                  $archivo_temp =  $_FILES["image_file"]["tmp_name"];
                  $extension =  explode(".",$_FILES["image_file"]["name"]);

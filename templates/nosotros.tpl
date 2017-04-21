@@ -28,8 +28,8 @@
 		</div>
 			
 			
-			<section class="parallax-sec parallax-sec7" data-type="background" data-speed="">
-    <article class="blox">
+	<section class="parallax-sec parallax-sec5" data-type="background" data-speed="">
+   		 <article class="blox">
 			<div class="container" style="top:-100px">
 			<div class="eight columns">
 			<p>&nbsp;</p>
