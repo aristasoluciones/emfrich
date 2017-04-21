@@ -387,7 +387,7 @@ class Imagen extends Main
 		return $data; 
 		
 	}
-	
+	//
 	public function listadeLista($Id){
 		
 		if($Id==null){
