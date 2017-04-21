@@ -165,9 +165,18 @@ class Imagen extends Main
 	}//Info
 	public function InfoCategoria(){
 		$sql = 'SELECT * FROM categoria WHERE categoriaId = '.$this->id.'';
+
 		$this->Util()->DB()->setQuery($sql);
 		$info = $this->Util()->DB()->GetRow();
-		return $info;
+	
+		$sql = 'SELECT * FROM productos_categorias WHERE categoria_id = '.$this->id.'';
+		$this->Util()->DB()->setQuery($sql);
+		$lst = $this->Util()->DB()->GetResult();
+	
+		$data["info"] = $info;
+		$data["productos"] = $lst;
+		
+		return $data;
 	}//Info
 	public function getSliders()
 	{
@@ -179,42 +188,27 @@ class Imagen extends Main
 	
 	public function Infosucursal(){
 		
-		
-		
-			$sql = 'SELECT * FROM sucursal WHERE sucursalId = '.$this->id.'';
-			$this->Util()->DB()->setQuery($sql);
-			$info = $this->Util()->DB()->GetRow();
-
-		
+		$sql = 'SELECT * FROM sucursal WHERE sucursalId = '.$this->id.'';
+		$this->Util()->DB()->setQuery($sql);
+		$info = $this->Util()->DB()->GetRow();
 		return $info;
 	}//Info
 	
 	public function infpuestos(){
-		
-		
-		
-			$sql = 'SELECT * FROM puestos WHERE puestosId = '.$this->id.'';
-			$this->Util()->DB()->setQuery($sql);
-			$info = $this->Util()->DB()->GetRow();
-
-		
+		$sql = 'SELECT * FROM puestos WHERE puestosId = '.$this->id.'';
+		$this->Util()->DB()->setQuery($sql);
+		$info = $this->Util()->DB()->GetRow();
 		return $info;
 	}//Info
 	
 	public function infcontacto(){
-		
-		
-		
-			$sql = 'SELECT * FROM contacto WHERE contac_Id = '.$this->id.'';
-			$this->Util()->DB()->setQuery($sql);
-			$info = $this->Util()->DB()->GetRow();
-
-		
+		$sql = 'SELECT * FROM contacto WHERE contac_Id = '.$this->id.'';
+		$this->Util()->DB()->setQuery($sql);
+		$info = $this->Util()->DB()->GetRow();
 		return $info;
 	}//Info
 	
 	public function InfoUnidad($Id){
-		
 		$sql = 'SELECT 
 					* 
 				from
@@ -226,8 +220,6 @@ class Imagen extends Main
 		
 		return $registros;
 	}
-	
-	
 	
 	public function EnumerateAll(){
 		

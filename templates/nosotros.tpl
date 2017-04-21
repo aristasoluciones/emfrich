@@ -15,7 +15,7 @@
 			<header id="header">
 				<div  class="container">
 					<div class="four columns">
-					<div class="logo"><a href="index.html"><img src="images/logo-1.png" width="100" id="logo-e" alt="logo"></a></div>
+					<div class="logo"><a href="#"><img src="images/logo-1.png" width="" id="logo-e" alt="logo"></a></div>
 					</div>		
 				{include file="{$DOC_ROOT}/templates/menus/main.tpl"}
 				</div>
@@ -26,15 +26,14 @@
 				</div>
 			</header>
 		</div>
-			
-			
+		
 	<section class="parallax-sec parallax-sec5" data-type="background" data-speed="">
    		 <article class="blox">
 			<div class="container" style="top:-100px">
 			<div class="eight columns">
 			<p>&nbsp;</p>
 			</div>
-			<div class="eight columns alignleft">
+			<div class="eight columns alignleft" style="height:600px; overflow:scroll">
 			
 			
 			  <hr><br>
@@ -64,10 +63,7 @@
 			  </div>
 			</article>
   </section>
-			
-			
-			
-			{include file="{$DOC_ROOT}/templates/footer.tpl"}
+	{include file="{$DOC_ROOT}/templates/footer.tpl"}
 			
 	</div>
 	{include file="{$DOC_ROOT}/templates/3-default-js.tpl"}

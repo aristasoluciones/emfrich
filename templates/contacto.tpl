@@ -16,7 +16,7 @@
 				<div  class="container">
 					<div class="four columns">
 					<div class="logo">
-					<a href="#"><img src="{$WEB_ROOT}/images/logo-1.png" width="100" id="img-logo" alt="logo"></a>
+					<a href="#"><img src="{$WEB_ROOT}/images/logo-1.png" width="" id="img-logo" alt="logo"></a>
 					</div>
 					</div>		
 				{include file="{$DOC_ROOT}/templates/menus/main.tpl"}
@@ -62,7 +62,7 @@
 				<br>
 				<p><strong>Telefonos:</strong></p>
 				<p>
-				961-60-4-50-19  <br />
+				<br />
 				  <br />
 				
 				</p>
