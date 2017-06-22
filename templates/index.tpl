@@ -9,7 +9,7 @@
 	{include file="{$DOC_ROOT}/templates/header.tpl"}
 </head>
 
-<body class="" >
+<body class="" ><!--esto es un comnetario--->
 	<div id="wrap" class="colorskin-0">
 		<section class="top-bar">
 			<div class="container">
