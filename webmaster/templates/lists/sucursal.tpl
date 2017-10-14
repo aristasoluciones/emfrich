@@ -20,8 +20,8 @@
             <td>{$item.encargado}</td>
             <td>{$item.direccion}</td>
 			<td><div align="center">
-				<a href="javascript:void(0)" onClick="EditReg({$item.sucursalid})" title="Editar sucursal">
-					<img src="{$WEB_ROOT}/images/png-icon/big/glyphicons_150_edit.png" border="0">
+				<a class="btn btn-xs yellow" href="javascript:void(0)" onClick="EditReg({$item.sucursalid})" title="Editar sucursal">
+					<i class="fa fa-pencil-square-o" ></i> 
 				</a>
 				<!-- <a href="javascript:void(0)" onClick="EditReg({$item.requisito_id})" title="Configurar tramite">
 					<img src="{$WEB_ROOT}/images/png-icon/big/glyphicons_136_cogwheel.png">

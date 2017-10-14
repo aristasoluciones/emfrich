@@ -26,22 +26,24 @@
     
             <td><div align="center">
                 {if in_array('edit_pcat',$privilegios) or $typeUser==1}
-				<a href="javascript:void(0)" onClick="EditReg({$item.producto_categoria_id})" title="Editar producto">
-					<img src="{$WEB_ROOT}/images/icons/pencil-16.png" border="0">
+				<a class="btn btn-xs yellow" href="javascript:void(0)" onClick="EditReg({$item.producto_categoria_id})" title="Editar producto">
+					<i class="fa fa-pencil-square-o" ></i> 
+					
 				</a>
                 {/if}
                 {if in_array('active_pcat',$privilegios) or $typeUser==1}
                     {if $item.status=="Baja"}
-                        <a href="javascript:void(0)" onClick="ActiveReg({$item.producto_categoria_id})" title="Activar producto">
-                            <img src="{$WEB_ROOT}/images/icons/activar.png" border="0">
+                        <a class="btn btn-xs green" href="javascript:void(0)" onClick="ActiveReg({$item.producto_categoria_id})" title="Activar producto">
+                            <i class="fa fa-check-square" aria-hidden="true"></i>
                         </a>
                     {else}
-                    <a href="javascript:void(0)" onClick="RemoveReg({$item.producto_categoria_id})" title="Desactivar producto">
-                        <img src="{$WEB_ROOT}/images/icons/desactivar.png" border="0">
+                    <a  class="btn btn-xs red" href="javascript:void(0)" onClick="RemoveReg({$item.producto_categoria_id})" title="Desactivar producto">
+                       <i class="fa fa-minus-circle" aria-hidden="true"></i>
+					   
                     </a>
                     {/if}
                 {/if}
-                				
+                
             </div>
             </td>
         </tr>

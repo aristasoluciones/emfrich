@@ -21,8 +21,8 @@
             <td>{$item.oficina}</td>
 			<td><div align="center">
              {if in_array('edit_puesto',$privilegios) or $typeUser==1}
-				<a href="javascript:void(0)" onClick="EditReg({$item.puestosid})" title="Editar personal">
-					<img src="{$WEB_ROOT}/images/png-icon/big/glyphicons_150_edit.png" border="0">
+				<a class="btn btn-xs yellow" href="javascript:void(0)" onClick="EditReg({$item.puestosid})" title="Editar personal">
+					<i class="fa fa-pencil-square-o" ></i> 
 				</a>
 				<!-- <a href="javascript:void(0)" onClick="EditReg({$item.requisito_id})" title="Configurar tramite">
 					<img src="{$WEB_ROOT}/images/png-icon/big/glyphicons_136_cogwheel.png">
